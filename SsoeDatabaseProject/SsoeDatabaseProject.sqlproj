@@ -111,6 +111,7 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Data Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Customer.sql" />
@@ -122,5 +123,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SsoeDatabaseProject.publish.xml" />
+    <None Include="Data Scripts\CustomerType.data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Data Scripts\PostDeploymentScript.sql" />
   </ItemGroup>
 </Project>
